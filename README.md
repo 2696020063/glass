@@ -13,5 +13,8 @@ Github: https://github.com/lzzzy6/glass
 克隆到template文件夹内或者下载zip解压到文件夹，然后去后台启动模板即可
 # 说明
 有什么问题可以直接留言
+<<<<<<< HEAD
 # DEMO
 https://d.gc24.cn
+=======
+>>>>>>> cf2715edc6f80b46b0c7818333bc054d5f74eca4
