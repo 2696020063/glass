@@ -3,7 +3,7 @@ body{
    
   }
   @font-face {
-  font-family: "shuxi";src: url("/template/glass/assets/shuzi.ttf");
+  font-family: "shuzi";src: url("/template/glass/assets/shuzi.ttf");
   font-display: swap;
 }
   header {
