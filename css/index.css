@@ -98,30 +98,15 @@ header li a{
   margin-left: 18px;
   margin-right: 18px;
 }
-#slider{
-  overflow: hidden;
-  position: relative;
-}
+
 #photo {
-width: 480px;
-animation: switch 15s ease-out infinite;
+width: 160px;
+border: 15px;
+overflow: hidden;
 }
 #photo > img {
-float: left;
-width: 160px;
+width: auto;
 height: 160px;
-
-}
-@keyframes switch {
-0%, 25% {
-margin-left: 0;
-}
-35%, 60% {
-margin-left: -160px;
-}
-70%, 100% {
-margin-left: -320px;
-}
 }
 .r-top {
   padding-bottom: 10px;

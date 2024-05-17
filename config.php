@@ -24,24 +24,11 @@ $theme_config =  [
   [
     'type' => 'text',
     'name' => 'bg1',
-    'title' => '第一张轮播图',
+    'title' => '一张图',
     'description' => '输入图片链接',
-    "value" => '',
+    "value" => 'https://bing.ee123.net/img/',
     ],
-[
-    'type' => 'text',
-    'name' => 'bg2',
-    'title' => '第二张轮播图',
-    'description' => '输入图片链接',
-    "value" => '',
-    ],
-    [
-    'type' => 'text',
-    'name' => 'bg3',
-    'title' => '第三张轮播图',
-    'description' => '输入图片链接',
-    "value" => '',
-    ],
+
     [
     'type' => 'text',
     'name' => 'gonganbei',

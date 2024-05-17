@@ -38,12 +38,8 @@
         <div id="time"></div>
         <div id="month"></div>
       </div>
-      <div class="s-card" id="slider">
-        <div id="photo">
+      <div class="s-card" id="photo">
         <img src="<?php echo theme_config(bg1) ?>" />
-      <img src="<?php echo theme_config(bg2) ?>" />
-      <img src="<?php echo theme_config(bg3) ?>" />
-        </div>
     </div>
     </div>
     <div class="l-card" style="height: 480px;"l><div id="lytoday"></div><script src="https://lytoday.lylme.com/?day=none&hot=weibo"></script></div>
