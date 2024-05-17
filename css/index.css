@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(59deg, #EE7752, #e73c7e, #23A6D5, #23D5AB);
+  background-attachment: fixed;
+}
+li {
+  list-style-type: none;
+}
+p,a{
+  text-decoration: none;
+  color: #fff;
+}
+header,.l-card,.s-card,.folder,.card,.searchTerm {
+backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 15px;
+  border: 1px solid rgba(209, 213, 219, 0.3)
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  border-radius: 0;
+  position: fixed;
+  z-index: 999;
+  padding-left: 10px;
+}
+header li a{
+  margin-right: 30px;
+}
+.title{
+  font-size: 20px;
+  color: #fff;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+@media screen and (max-width: 780px) {
+  .container-l{
+    height: auto;
+    width: 100%;
+  }
+  .container-r{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #xx2 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width:780px) {
+  .container-l{
+    max-width: 500px;
+    position: fixed;
+  }
+  .container-r{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 500px;
+    justify-content: space-evenly;
+    width: auto;
+  }
+
+}
+.container-l {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.l-card{
+  margin-top: 20px;
+  width: 360px;
+  padding-bottom: 10px;
+}
+#tq {
+  height: 96px;
+}
+.l-card li{
+  font-size: 16px;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.s-card {
+  width: 160px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+#slider{
+  overflow: hidden;
+  position: relative;
+}
+#photo {
+width: 480px;
+animation: switch 15s ease-out infinite;
+}
+#photo > img {
+float: left;
+width: 160px;
+height: 160px;
+
+}
+@keyframes switch {
+0%, 25% {
+margin-left: 0;
+}
+35%, 60% {
+margin-left: -160px;
+}
+70%, 100% {
+margin-left: -320px;
+}
+}
+.r-top {
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color:#fff;
+  transition: all 0.5s ease;
+}
+
+.searchTerm {
+  width: 320px;
+  border: none;
+  padding:5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  transition: all 0.1s ease;
+}
+.searchTerm:focus{
+  color: #fff;
+}
+input[type=text]::placeholder{
+  color: #fff;
+}
+.search:hover {
+  transform: scale(1.05);
+}
+.searchButton {
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: -5px;
+}
+.r-buttom {
+  width: 100%;
+  margin-right: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 80%;
+  max-width: 480px;
+  margin-top: 20px;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+p {
+  width: 100%;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card a{
+  width: 48%;
+  min-width: 160px;
+  height: 32px;
+  margin-top: 8px;
+  border-radius: 5px;
+  display: flex;
+  transition: all 0.1s ease;
+}
+.card a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.card li{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card svg.icon,.card img{
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.card i {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 3px;
+}
+.hot-card {
+  background: rgba(255, 255, 255, 0) !important;
+  border: 0 !important;
+}
+.hot-card a,.hot-unit,.hot-rank,.hot-title{
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+#time,#month {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 10px;
+}
+#time {
+  font-size: 48px;
+  margin-top: 25px;
+}
+#month {
+  font-size: 18px;
+  margin-top: 5px;
+}
+/**一言*/
+#yiyan {
+  position: fixed;
+  top:30px;
+  right: 20px;
+  max-width: 300px;
+  padding: 5px;
+  font-size: 16px;
+  color:rgba(255, 255, 255, 0.9);
+  transition: all 1s ease;
+  opacity: 0;
+}
