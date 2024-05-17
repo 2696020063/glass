@@ -45,6 +45,9 @@ header li a{
   padding-top: 30px;
 }
 @media screen and (max-width: 780px) {
+    .title {
+        margin-left: 5%;
+    }
   .container-l{
     height: auto;
     width: 100%;
@@ -165,8 +168,8 @@ input[type=text]::placeholder{
 .card {
   width: 80%;
   max-width: 480px;
-  margin-top: 20px;
-  margin: 30px;
+  margin: 20px;
+  margin-top: 10px;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -241,4 +244,7 @@ p {
   color:rgba(255, 255, 255, 0.9);
   transition: all 1s ease;
   opacity: 0;
+}
+#xx1,#xx2{
+    display: none;
 }

@@ -43,7 +43,7 @@
     </div>
     </div>
     <div class="l-card" style="height: 480px;"l><div id="lytoday"></div><script src="https://lytoday.lylme.com/?day=none&hot=weibo"></script></div>
-     <div class="l-card" id="xx1" style="display: none;">
+     <div class="l-card" id="xx1">
       <p style="margin: 20px">网站信息</p>
       <li>站点：<?php echo $conf['title'] ?></li>
       <li>主题：<a href="https://github.com/lzzzy6/glass">Glass</a>  By  <a href="https://www.gc24.cn">敢闯</a></li>
@@ -77,9 +77,9 @@
     );
     lists($html); //调用
     ?>
-      </div>
+     </div>
  
-     <div class="l-card" id="xx2" style="display: none;">
+     <div class="l-card" id="xx2">
       <p style="margin: 20px">网站信息</p>
       <li>站点：<?php echo $conf['title'] ?></li>
       <li>主题：<a href="https://github.com/lzzzy6/glass">Glass</a>  By  <a href="https://www.gc24.cn">敢闯</a></li>
@@ -87,7 +87,7 @@
         echo '<li>ICP备案号：<a href="#">'.theme_config(gonganbei).'</a></li>'
       
       ?>
-
+ 
     </div>
     </div>
 </div> 
